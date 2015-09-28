@@ -1,6 +1,6 @@
-package $organization$.$name;format="lower,word"$
+package $organization$.$package$
 
-object HelloWorld {
+object $mainclass$ {
   def main(args: Array[String]) {
     println("Hello World!!!")
   }
