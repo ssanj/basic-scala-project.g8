@@ -1,12 +1,12 @@
-This is a [giter8](https://github.com/n8han/giter8) template for generating a new scala project. It comes bundled with:
+This is a [giter8](https://github.com/n8han/giter8) template for generating a new scala-2.12 project. It comes bundled with:
 
 * `main` and `test` source directories
 * *.html *.js *.css *.xml are automatically filtered
-* [SBT](http://www.scala-sbt.org) 0.13.7
-* [Scala](http://scala-lang.org) 2.11.7
-* [ScalaTest](http://www.scalatest.org) 2.2.4
-* [ScalaCheck](http://www.scalacheck.org) 1.12.5
-* [Scalaz](https://github.com/scalaz/scalaz) 7.1.4
+* [SBT](http://www.scala-sbt.org) 0.13.13
+* [Scala](http://scala-lang.org) 2.12.1
+* [ScalaTest](http://www.scalatest.org) 3.0.1
+* [ScalaCheck](http://www.scalacheck.org) 1.13.4
+* [Scalaz](https://github.com/scalaz/scalaz) 7.2.9
 * Compiler Flags:
     * -unchecked
     * -deprecation
