@@ -4,12 +4,12 @@ organization := "$organization$"
 
 version := "$version$"
 
-scalaVersion := "$scala_version$"
+scalaVersion := "$scala_compiler_version$"
 
 libraryDependencies ++= Seq(
-  "org.scalaz"     %% "scalaz-core" % "7.2.9",
-  "org.scalatest"  %% "scalatest"   % "3.0.1"  % "test",
-  "org.scalacheck" %% "scalacheck"  % "1.13.4" % "test"
+  "org.scalaz"     %% "scalaz-core" % "$scalaz_version$",
+  "org.scalatest"  %% "scalatest"   % "$scalatest_version$"  % "test",
+  "org.scalacheck" %% "scalacheck"  % "$scalacheck_version$" % "test"
 )
 
 scalacOptions ++= Seq(
@@ -26,7 +26,7 @@ scalacOptions ++= Seq(
                       "-Ywarn-nullary-unit"
                      )
 
-scalacOptions in (Compile, console) ~= (_.filterNot(Seq("-Xfatal-warnings", "-Ywarn-unused-import") contains _))
+scalacOptions in (Compile, console) ~= (_.filterNot(Seq("-Xlint:_", "-Xfatal-warnings", "-Ywarn-unused-import") contains _))
 
 scalacOptions in (Test, console) := (scalacOptions in (Compile, console)).value
 
