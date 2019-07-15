@@ -1,4 +1,4 @@
-This is a [giter8](https://github.com/foundweekends/giter8) template for generating a new scala-2.12 project.
+This is a [giter8](https://github.com/foundweekends/giter8) template for generating a new scala-2.12 project. Requires [giter8 version 0.8](https://github.com/foundweekends/giter8/releases/tag/v0.8.0) or newer to use __stable__ dependencies.
 
  It comes bundled with:
 
