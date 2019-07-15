@@ -4,7 +4,7 @@ organization := "$organization$"
 
 version := "$version$"
 
-scalaVersion := "$scala_compiler_version$"
+scalaVersion := "2.13.0"
 
 libraryDependencies ++= Seq(
   "org.scalatest"  %% "scalatest"   % "$scalatest_version$"  % "test",
@@ -16,22 +16,14 @@ lazy val commonCompilerOptions =
       "-unchecked",
       "-encoding", "UTF-8",
       "-deprecation",
-      "-feature",
-      "-Ypartial-unification"
+      "-feature"
     )
 
 scalacOptions ++= 
   commonCompilerOptions ++ 
   Seq(
-      "-Xfatal-warnings",
-      "-Xlint:_",
-      "-Ywarn-dead-code",
-      "-Ywarn-inaccessible",
-      "-Ywarn-unused-import",
-      "-Ywarn-infer-any",
-      "-Ywarn-nullary-override",
-      "-Ywarn-nullary-unit",
-     )
+      "-Werror"     
+  )
 
 scalacOptions in (Compile, console) := commonCompilerOptions
 
