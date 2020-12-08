@@ -4,7 +4,7 @@ organization := "$organization$"
 
 version := "$version$"
 
-scalaVersion := "2.13.0"
+scalaVersion := "$scala_version$"
 
 libraryDependencies ++= Seq(
   "org.scalatest"  %% "scalatest"   % "$scalatest_version$"  % "test",
@@ -19,10 +19,10 @@ lazy val commonCompilerOptions =
       "-feature"
     )
 
-scalacOptions ++= 
-  commonCompilerOptions ++ 
+scalacOptions ++=
+  commonCompilerOptions ++
   Seq(
-      "-Werror"     
+      "-Werror"
   )
 
 scalacOptions in (Compile, console) := commonCompilerOptions
